@@ -1,0 +1,236 @@
+
+/* FAMILY */
+@font-face {
+    font-family: "Red_Hat_Display_medium500";
+    src: url(./Font-Red_Hat_Display/static/RedHatDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: "Red_Hat_Display_bold700";
+    src: url(./Font-Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: "Red_Hat_Display_black900";
+    src: url(./Font-Red_Hat_Display/static/RedHatDisplay-Black.ttf);
+}
+@font-face {
+    font-family: "red_hat";
+    src: url(./Font-Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+#color {
+    /* bg-primary-pale-blue */
+    background-color: hsl(225, 100%, 94%);
+    /* bg-primary-bright-blue */
+    background-color: hsl(245, 75%, 52%);
+    /* primary-pale-blue */
+    color: hsl(225, 100%, 94%);
+    /* primary-bright-blue */
+    color: hsl(245, 75%, 52%);
+    /* bg-neutral-pale-blue */
+    background-color: hsl(225, 100%, 98%);
+    /* bg-neutral-desaturated-blue */
+    background-color: hsl(224, 23%, 55%);
+    /* bg-dark-desaturated-blue */
+    background-color: hsl(223, 47%, 23%);
+    /* neutral-pale-blue */
+    color: hsl(225, 100%, 98%);
+    /* neutral-desaturated-blue */
+    color: hsl(224, 23%, 55%);
+    /* dark-desaturated-blue */
+    color: hsl(223, 47%, 23%);
+}
+
+/* BACKGROUND */
+    /* BG HAUT */
+        /* fichier image */
+    /* BG BAS */
+        /* ? */
+    /* BLOC ANNUAL PLAN */
+        /* background-color: hsl(225, 100%, 98%); */
+    /* BOUTON */
+        /* background-color: hsl(245, 75%, 52%); */
+
+/* FONTS */
+    /* ORDER SUMMARY / ANNUAL PLAN */
+        /* color: hsl(223, 47%, 23%); */
+    /* YOU CAN NOW / 59.99 / CANCEL ORDER */
+        /* color: hsl(224, 23%, 55%); */
+    /* CHANGE */
+        /* color: hsl(245, 75%, 52%); */
+    /* NOTE DE MUSIQUE */
+        /* background-color: hsl(225, 100%, 94%); */
+        /* background-color: hsl(224, 23%, 55%); */
+    /* HOVER CANCEL ORDER */
+        /* background-color: hsl(223, 47%, 23%); */
+/* ??? */
+    /* color: hsl(225, 100%, 94%); */
+    /* color: hsl(225, 100%, 98%); */
+
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* border: 1px solid black; */
+    background-image: url(./Images/pattern-background-desktop.svg);
+    background-color: #e0e8ff;
+    background-repeat: repeat-x ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHALLENGE */
+#challenge {
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 700px;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: rgb(200, 201, 202) 1px 1px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGE */
+img {
+    /* border: 1px solid black; */
+    border-radius: 20px 20px 0px 0px ;
+}
+
+/* BLOC BLOC ORDER SUMMARY / YOU CAN NOW */
+#bloc-text {
+    /* border: 1px solid red; */
+    height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#bloc1 {
+    /* border: 1px solid black; */
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+    #bloc1 h1 {
+        /* border: 1px solid black; */
+        width: 220px;
+        font-family: red_hat;
+        font-weight: 900;
+        font-size: 27px;
+        margin: 0;
+    }
+    #bloc1 p {
+        /* border: 1px solid black; */
+        color: hsl(224, 23%, 55%);
+        width: 295px;
+        font-family: red_hat;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+        margin-top: 25px;
+    }
+
+/* BLOC 2 */
+#bloc2 {
+    /* border: 1px solid black; */
+    background-color: hsl(225, 100%, 98%);
+    width: 355px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 25px;
+}
+    /* BLOC 2-2 */
+    #bloc2-1 {
+        /* border: 1px solid black; */
+        display: flex;
+    }
+    #bloc2-1 img {
+        /* border: 1px solid black; */
+        border-radius: 0 ;
+        margin-right: 20px;
+        height: 50px;
+    }
+        /* ANNUAL PLAN */
+        #bloc2-2{
+            /* border: 1px solid black; */
+            color: hsl(223, 47%, 23%);
+            display: flex;
+            flex-direction: column;
+        }
+        #bloc2-2 h2 {
+            /* border: 1px solid black; */
+            color: hsl(223, 47%, 23%);
+            font-family: red_hat;
+            font-size: 17px;
+            font-weight: 900;
+            margin: 0;
+        }
+        #bloc2-2 p {
+            /* border: 1px solid black; */
+            color: hsl(224, 23%, 55%);
+            font-family: red_hat;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0;
+        }
+    /* CHANGE */
+    #bloc2 a {
+        /* border: 1px solid black; */
+        width: 50px;
+        color: hsl(245, 75%, 52%);
+        font-family: red_hat;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    #bloc2 a:hover {
+        cursor: pointer;
+        color: #766cf1;
+    }
+
+/* BOUTON */
+button {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);;
+    box-shadow: 1px 15px 20px rgb(188, 192, 196);
+    width: 355px;
+    height: 50px;
+    font-family: red_hat;
+    font-weight: 700;
+}
+button:hover {
+    background-color: #766cf1;
+    cursor: pointer;    
+}
+
+/* LIEN CANCEL ORDER */
+#challenge a + a {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-family: red_hat;
+    font-weight: 900;
+    font-size: 13px;
+}
+#challenge a + a:hover {
+    color: hsl(223, 47%, 23%);
+}
